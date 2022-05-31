@@ -1,6 +1,6 @@
 import streamlit as st
 from bbquote.lib import get_quote
 
-quote = get_quote()
+quote, author = get_quote()
 
-f"{quote}"
+st.write(f"{quote}", "\n- ", f"{author}")
