@@ -8,8 +8,10 @@ def get_quote():
     if len(response)==0:
         return None
 
-    quote = f"\"{response[0]['quote']}\" \n- {response[0]['author']}"
-    return quote
+    quote = f"\"{response[0]['quote']}\""
+    author = f"{response[0]['author']}"
+    return quote, author
 
 if __name__ == '__main__':
-    print(get_quote())
+    quote, author = get_quote()
+    print(f"{quote}\n- {author}")

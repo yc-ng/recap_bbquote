@@ -1,8 +1,6 @@
 import streamlit as st
 from bbquote.lib import get_quote
 
-st.markdown(f'''
-Who said what?
+quote = get_quote()
 
-{get_quote()}
-''')
+f"{quote}"

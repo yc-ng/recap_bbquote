@@ -70,3 +70,5 @@ heroku_create_app:
 deploy_heroku:
 	-@git push heroku master
 	-@heroku ps:scale web=1
+
+HEROKU_EMAIL_ADDRESS="yeongchyuan.ng@gmail.com"
